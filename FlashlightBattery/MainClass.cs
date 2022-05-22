@@ -13,7 +13,7 @@ namespace FlashlightBattery
         public override string Prefix => "flashlight_battery";
         public override string Author => "xNexus-ACS";
         public override Version Version { get; } = new Version(0, 1, 0);
-        public override Version RequiredExiledVersion { get; } = new Version(5, 1, 3);
+        public override Version RequiredExiledVersion { get; } = new Version(5, 2, 1);
 
         public EventHandlers ev;
 
