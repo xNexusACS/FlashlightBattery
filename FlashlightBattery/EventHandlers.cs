@@ -25,7 +25,7 @@ namespace FlashlightBattery
         }
         internal void OnChangingItem(ChangingItemEventArgs ev)
         {
-            if (ev.NewItem.Type == ItemType.Flashlight && heldFlashlights.ContainsKey(ev.NewItem.Base))
+            if (ev.NewItem?.Type == ItemType.Flashlight && heldFlashlights.ContainsKey(ev.NewItem.Base))
             {
                 BatteryComponent component = heldFlashlights[ev.NewItem.Base];
                 if (component != null)
